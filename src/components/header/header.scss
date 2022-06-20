@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerFirst {
+  .BrandImage {
+    width: 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .nav {
+    width: 60%;
+    gap: 0px;
+
+    .navImg {
+      width: 20%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
