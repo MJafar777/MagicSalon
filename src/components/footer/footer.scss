@@ -1,0 +1,67 @@
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #514f62;
+  color: white;
+
+  .menu {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2.5fr;
+    gap: 4rem;
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+
+      h2 {
+        font-size: 2rem;
+        padding: 4px 0;
+        margin-bottom: 1.5rem;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+      .menu_btn {
+        background-color: #e91c6a;
+        color: white;
+        font-size: 1.2rem;
+        padding: 4px 2px;
+        max-width: 80%;
+        border-radius: 1.4rem;
+        border: none;
+        font-weight: bold;
+        box-shadow: 0.2rem 0.4rem 0.5rem rgb(64, 63, 63);
+      }
+      .form {
+        width: 100%;
+        background-color: white;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        input {
+          border: none;
+          background-color: none;
+          outline: none;
+          padding-left: 30px;
+          border-radius: 1.5rem 0 0 1.5rem;
+        }
+        button {
+          background-color: #e91c6a;
+          border: none;
+          color: white;
+          padding: 8px 40px;
+          font-weight: 600;
+          border-radius: 0 1.5rem 1.5rem 0;
+        }
+      }
+    }
+    .row_first {
+      gap: 30px;
+    }
+  }
+}
