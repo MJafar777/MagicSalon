@@ -1,0 +1,49 @@
+.slider-bg {
+   background: linear-gradient(
+      to right,
+      rgba(25, 133, 242, 0.1),
+      rgba(247, 81, 185, 0.1)
+   );
+   padding: 2%;
+   position: relative;
+
+   &__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      width: 50%;
+   }
+}
+.slider {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   align-items: center;
+   gap: 1%;
+
+   &__svg1 {
+      justify-self: end;
+   }
+
+   &__item {
+      padding: 5%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 2px 2px rgba(25, 133, 242, 0.1);
+
+      &--text {
+         padding: 5%;
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+      }
+
+      &--price {
+         color: #e91c6a;
+         align-self: flex-end;
+         font-size: 1.4rem;
+         margin-top: -5%;
+      }
+   }
+}
