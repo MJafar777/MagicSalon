@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.scss";
 import img from "../../images/logo.png";
 import ff from "../../images/Group 1442.png";
+import card from "../../images/Group 1444.png";
 const Footer = () => {
   return (
     <div className="footer">
@@ -43,6 +44,10 @@ const Footer = () => {
             <button>SUBSCRIBE</button>
           </div>
         </div>
+      </div>
+      <div className="copyright">
+        <p>© 2018 mirayah. All Rights Reserved.</p>
+        <img src={card} alt="card " />
       </div>
     </div>
   );
