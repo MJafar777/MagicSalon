@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TopSellersComponents = () => {
+const NewArrivals = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const TopSellersComponents = () => {
   );
 };
 
-export default TopSellersComponents;
+export default NewArrivals;
