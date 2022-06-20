@@ -1,0 +1,43 @@
+.banner {
+   background-image: url(./img/banner_img.jpg);
+   background-position: center;
+   background-size: cover;
+   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+
+   &__content {
+      margin-left: 15%;
+      padding: 1%;
+
+      &--bigText {
+         color: #514f62;
+
+         &-number {
+            font-size: 10rem;
+         }
+         &-span {
+            font-size: 6rem;
+         }
+      }
+
+      &--pinkText {
+         color: #e91c6a;
+
+         &-span {
+            font-size: 2rem;
+            font-weight: 600;
+         }
+         &-b {
+            font-size: 3rem;
+         }
+      }
+
+      &--btn {
+         background-color: #e91c6a;
+         color: white;
+         padding: 1% 2%;
+         border: none;
+         margin: 3% 0;
+         box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
+      }
+   }
+}
