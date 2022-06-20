@@ -38,6 +38,13 @@
          border: none;
          margin: 3% 0;
          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
+         cursor: pointer;
+         font-weight: 600;
+
+         &:hover {
+            color: #e91c6a;
+            background-color: white;
+         }
       }
    }
 }

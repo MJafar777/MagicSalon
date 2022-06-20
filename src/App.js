@@ -18,7 +18,7 @@ const App = () => {
       <Arrivals />
       <Slider1 />
       <TopSellersComponents />
-      <Slider1 />
+      <Slider2 />
       <Salebanner />
       <AmBassaDors />
       <Footer />
