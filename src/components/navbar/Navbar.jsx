@@ -1,10 +1,11 @@
 import React from 'react';
-
+import ""
 
 const Navbar = () => {
   return (
-    <div>
-      Navbar
+    <div className='Navbar'>
+      <div className='Navbar__left'></div>
+      <div className='Navbar__right'></div>
     </div>
   );
 };
