@@ -20,11 +20,17 @@
 }
 
 .header {
-   background-image: url(./images/a683dfb3cbeecb5d246f126d867db8a6.jpg);
+   background-image: linear-gradient(
+         to left,
+         rgba(0, 0, 0, 0.1),
+         rgba(0, 0, 0, 0.5)
+      ),
+      url(./images/a683dfb3cbeecb5d246f126d867db8a6.jpg);
    background-position: center;
    background-size: cover;
    color: seashell;
    padding: 7% 0;
+
    &__content {
       margin-left: 15%;
 
