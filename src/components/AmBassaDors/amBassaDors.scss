@@ -1,14 +1,24 @@
 .main {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 3fr;
+   grid-template-columns: 1fr 2fr;
    gap: 20px;
+   margin-top: 5%;
+
+   &--left {
+      width: 100%;
+
+      & img {
+         object-fit: contain;
+         width: 100%;
+      }
+   }
 
    &--right {
       &__cards {
          display: flex;
-         gap: 49.5px;
-         margin-bottom: 67.5px;
+         gap: 3%;
+         margin-top: 2%;
          margin-left: -60px;
       }
 
@@ -33,11 +43,18 @@
 }
 
 .cardBox {
-   width: 272.63px;
-   height: 554.5px;
+   // width: 272.63px;
+   // height: 554.5px;
    border: 1px solid #e2e2e2;
    box-shadow: 0 1.5px 5px;
    background-color: #fff;
+   margin-top: 2%;
+
+   & img {
+      // max-width: 250px;
+      max-height: 280px;
+      object-fit: cover;
+   }
 
    &--description {
       text-align: center;
@@ -65,18 +82,18 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-      margin: 16px 0;
+      margin: 5px 0;
 
       &__sqr {
-         width: 16px;
-         height: 33px;
+         width: 14px;
+         height: 18px;
          display: block;
          color: #514f62;
          border: 3px solid #514f62;
       }
 
       &__line {
-         height: 33px;
+         height: 26px;
          border: 2px solid #514f62;
          background-color: #514f62;
          display: block;
@@ -91,5 +108,6 @@
       color: white;
       font-size: 15px;
       font-weight: bold;
+      margin: 5%;
    }
 }
