@@ -20,9 +20,9 @@
 
 .count__one {
   width: 80%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 50% 50%;
 
   &--fearst {
     background-image: linear-gradient(
@@ -63,6 +63,29 @@
     &-btn:active {
       transform: scale(1.05);
       transition: all 0.3s;
+    }
+  }
+  &--secont {
+    margin: 0 4rem;
+    &-left {
+      &-content {
+        color: black;
+        &-1 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        &-2 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-top: 1rem;
+        }
+      }
+      &-prices {
+        font-size: 1.8rem;
+        color: #e91c6a;
+        margin-left: 25%;
+        margin-top: 1rem;
+      }
     }
   }
 }
