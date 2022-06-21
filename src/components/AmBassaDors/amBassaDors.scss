@@ -20,7 +20,8 @@
       background-position: -6000%;
 
       &__cards {
-         display: flex;
+         display: grid;
+         grid-template-columns: 27% 27% 27%;
          gap: 3%;
          margin-top: 2%;
          margin-left: -7%;
@@ -53,9 +54,7 @@
    margin-top: 2%;
 
    & img {
-      // max-width: 250px;
-      max-height: 310px;
-      object-fit: cover;
+      width: 100%;
    }
 
    &--description {
