@@ -15,6 +15,10 @@
    }
 
    &--right {
+      background-image: url(./image/bgcImg.png);
+      background-repeat: space;
+      background-position: -6000%;
+
       &__cards {
          display: flex;
          gap: 3%;
@@ -34,9 +38,7 @@
 
          & div {
             width: 100%;
-            display: inline-block;
-            border-top: 3px dashed #e91c6a;
-            border-width: 5px;
+            border-top: 5px dashed #e91c6a;
          }
       }
    }

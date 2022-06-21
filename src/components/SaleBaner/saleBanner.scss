@@ -1,5 +1,10 @@
 .banner {
-   background-image: url(./img/banner_img.jpg);
+   background-image: linear-gradient(
+         to left,
+         rgba(0, 0, 0, 0.01),
+         rgba(0, 0, 0, 0.1)
+      ),
+      url(./img/banner_img.jpg);
    background-position: center;
    background-size: 110%;
    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);

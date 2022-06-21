@@ -1,15 +1,15 @@
 .TopSeler {
-   width: 80%;
+   width: 100%;
    margin: 0 auto;
    padding: 3% 0;
+
    &--link {
       font-size: 2rem;
       font-weight: 500;
-      display: block;
-      margin-top: 3%;
-      margin-left: 48%;
-
       color: #e91c6a;
+      margin-left: 50%;
+      display: inline-block;
+      transform: translateX(-50%);
    }
    &__header {
       &--h2 {
@@ -17,24 +17,29 @@
          font-size: 4rem;
          display: flex;
          align-items: center;
-         justify-content: space-around;
+         // justify-content: space-around;
+         // width: 100vw;
+
+         &-text {
+            width: 100%;
+            margin: 0 -5%;
+         }
+
          &-border {
-            // border-style: dashed;
-            border-top: 1px, dashed, red;
-            color: #e91c6a;
-            width: 35%;
-            background-color: red;
-            height: 0.5rem;
+            width: 100%;
+            border-top: 5px dashed #e91c6a;
          }
       }
    }
 }
 .imgBackground {
+   width: 80%;
+   margin: 3% auto;
    display: grid;
    align-items: center;
    grid-template-columns: 1fr 1fr;
    gap: 2rem;
-   margin: 3% 0;
+   // margin: 3% 0;
 
    &--ImgTop1 {
       background-image: linear-gradient(

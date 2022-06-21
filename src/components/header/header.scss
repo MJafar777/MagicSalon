@@ -1,7 +1,6 @@
 .Menu {
    width: 80%;
-   margin: 1% auto;
-   margin-top: 2%;
+   margin: 2% auto;
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -27,7 +26,8 @@
       ),
       url(./images/a683dfb3cbeecb5d246f126d867db8a6.jpg);
    background-position: center;
-   background-size: cover;
+   background-position-y: 20%;
+   background-size: 105%;
    color: seashell;
    padding: 7% 0;
 
