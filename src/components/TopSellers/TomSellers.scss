@@ -1,100 +1,113 @@
 .TopSeler {
-  width: 80%;
-  margin: 0 auto;
-  height: 77.5rem;
-  &--link {
-    font-size: 2rem;
-    font-weight: 500;
-    display: block;
-    margin-top: 10rem;
-    margin-left: 48%;
+   width: 80%;
+   margin: 0 auto;
+   padding: 3% 0;
+   &--link {
+      font-size: 2rem;
+      font-weight: 500;
+      display: block;
+      margin-top: 3%;
+      margin-left: 48%;
 
-    color: #e91c6a;
-  }
-  &__header {
-    &--h2 {
-      text-align: center;
-      font-size: 4rem;
-      margin-top: 7rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      &-border {
-        // border-style: dashed;
-        border-top: 1px, dashed, red;
-        color: #e91c6a;
-        width: 35%;
-        background-color: red;
-        height: 0.5rem;
+      color: #e91c6a;
+   }
+   &__header {
+      &--h2 {
+         text-align: center;
+         font-size: 4rem;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         &-border {
+            // border-style: dashed;
+            border-top: 1px, dashed, red;
+            color: #e91c6a;
+            width: 35%;
+            background-color: red;
+            height: 0.5rem;
+         }
       }
-    }
-  }
+   }
 }
 .imgBackground {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 10rem;
+   display: grid;
+   align-items: center;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   margin: 3% 0;
 
-  &--ImgTop1 {
-    background-image: url("../../images/TopSeler1.png");
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    box-shadow: 0 0px 50px grey inset;
-    border-radius: 1rem;
-    &-text {
-      h2 {
-        font-size: 4rem;
-        margin-left: 10%;
-        margin-top: 40%;
-        color: white;
-      }
-      p {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-left: 10%;
-        margin-top: 1rem;
-        color: white;
-      }
-    }
-    &-btnShop {
-      padding: 1rem 3rem;
-      font-size: 1.6rem;
+   &--ImgTop1 {
+      background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01),
+            rgba(0, 0, 0, 0.7) 95% 100%
+         ),
+         url("../../images/TopSeler1.png");
+      background-position: center;
+      background-size: 115%;
+      box-shadow: 0 0px 50px grey inset;
       border-radius: 1rem;
-      border: none;
-      background-color: #e91c6a;
-      color: white;
-      margin-left: 40%;
-      margin-top: 10%;
-    }
-    &-btnShop:active {
-      transform: scale(1.05);
-      transition: all 0.1s;
-    }
-  }
-  &--ImgTop2 {
-    background-image: url("../../images/topSeler2.png");
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    box-shadow: 0 0px 50px grey inset;
-    border-radius: 1rem;
-    &-text {
-      h2 {
-        font-size: 4rem;
-        margin-left: 10%;
-        margin-top: 40%;
-        color: white;
+
+      &-text {
+         h2 {
+            font-size: 4rem;
+            margin-left: 10%;
+            margin-top: 40%;
+            color: white;
+         }
+         p {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 10%;
+            margin-top: 1rem;
+            color: white;
+         }
       }
-      p {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-left: 10%;
-        margin-top: 1rem;
-        color: white;
+      &-btnShop {
+         padding: 1rem 3rem;
+         font-size: 1.6rem;
+         border-radius: 1rem;
+         border: none;
+         background-color: #e91c6a;
+         color: white;
+         //  margin-left: 40%;
+         //  margin-top: 10%;
+         margin-left: 50%;
+         margin-bottom: -5%;
+         margin-top: 5%;
+         transform: translateX(-50%);
       }
-    }
-  }
+      &-btnShop:active {
+         transform: scale(1.05);
+         transition: all 0.1s;
+      }
+   }
+   &--ImgTop2 {
+      background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01),
+            rgba(0, 0, 0, 0.7) 95% 100%
+         ),
+         url("../../images/topSeler2.png");
+      background-position: center;
+      background-size: 115%;
+
+      box-shadow: 0 0px 50px grey inset;
+      border-radius: 1rem;
+      &-text {
+         h2 {
+            font-size: 4rem;
+            margin-left: 10%;
+            margin-top: 40%;
+            color: white;
+         }
+         p {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 10%;
+            margin-top: 1rem;
+            color: white;
+         }
+      }
+   }
 }
