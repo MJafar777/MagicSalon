@@ -6,7 +6,6 @@ import AED from "./images/AED.png";
 import language from "./images/language.png";
 import person from "./images/person.png";
 import sale from "./images/sale.png";
-
 const Navbar = () => {
   return (
     <div className="count">
