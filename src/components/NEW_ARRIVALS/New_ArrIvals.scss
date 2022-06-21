@@ -67,6 +67,11 @@
   }
   &--secont {
     margin: 0 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+
     &-left {
       &-content {
         color: black;
@@ -83,8 +88,13 @@
       &-prices {
         font-size: 1.8rem;
         color: #e91c6a;
-        margin-left: 25%;
+        margin-left: 50%;
         margin-top: 1rem;
+      }
+    }
+    &-right {
+      &-img2 {
+        background-image: url("./images/elf.png");
       }
     }
   }

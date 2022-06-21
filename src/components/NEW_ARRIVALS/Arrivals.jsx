@@ -33,7 +33,7 @@ const Arrivals = () => {
           </div>
 
           <div className="count__one--secont-right">
-            <div className="count__one--secont-left-img2"></div>
+            <div className="count__one--secont-right-img2"></div>
           </div>
         </div>
       </div>
