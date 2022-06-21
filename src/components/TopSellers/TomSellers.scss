@@ -43,9 +43,9 @@
 
    &--ImgTop1 {
       background-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.7) 99% 100%
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(255, 255, 255, 0) 50%
          ),
          url("../../images/TopSeler1.png");
       background-position: center;
@@ -75,8 +75,6 @@
          border: none;
          background-color: #e91c6a;
          color: white;
-         //  margin-left: 40%;
-         //  margin-top: 10%;
          margin-left: 50%;
          margin-bottom: -5%;
          margin-top: 5%;
@@ -89,9 +87,9 @@
    }
    &--ImgTop2 {
       background-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.7) 99% 100%
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(255, 255, 255, 0) 50%
          ),
          url("../../images/topSeler2.png");
       background-position: center;
