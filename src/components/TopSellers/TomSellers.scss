@@ -17,8 +17,6 @@
          font-size: 4rem;
          display: flex;
          align-items: center;
-         // justify-content: space-around;
-         // width: 100vw;
 
          &-text {
             width: 100%;
@@ -40,7 +38,6 @@
    align-items: center;
    grid-template-columns: 1fr 1fr;
    gap: 2rem;
-   // margin: 3% 0;
 
    &--ImgTop1 {
       background-image: linear-gradient(
@@ -117,7 +114,6 @@
          url("../../images/topSeler2.png");
       background-position: center;
       background-size: 115%;
-
       box-shadow: 0 0px 50px grey inset;
       border-radius: 1rem;
       &-text {
@@ -153,41 +149,3 @@
       }
    }
 }
-// &--ImgTop2 {
-//    background-image: linear-gradient(
-//          to bottom,
-//          rgba(0, 0, 0, 0),
-//          rgba(0, 0, 0, 0.7) 99% 100%
-//       ),
-//       url("../../images/topSeler2.png");
-//    background-position: center;
-//    background-size: 115%;
-
-//    box-shadow: 0 0px 50px grey inset;
-//    border-radius: 1rem;
-//    &-text {
-//       h2 {
-//          font-size: 4rem;
-//          margin-left: 10%;
-//          margin-top: 40%;
-//          color: white;
-//       }
-//       &-btnShop {
-//          padding: 1rem 3rem;
-//          font-size: 1.6rem;
-//          border-radius: 1rem;
-//          border: none;
-//          background-color: #e91c6a;
-//          color: white;
-//          margin-left: 50%;
-//          margin-bottom: -5%;
-//          margin-top: 5%;
-//          transform: translateX(-50%);
-//       }
-//       &-btnShop:active {
-//          transform: scale(1.05);
-//          transition: all 0.1s;
-//       }
-//    }
-
-// }
