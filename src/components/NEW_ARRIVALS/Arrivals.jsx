@@ -33,7 +33,9 @@ const Arrivals = () => {
           </div>
 
           <div className="count__one--secont-right">
-            <div className="count__one--secont-right-img2"></div>
+            <div className="count__one--secont-right-img2">
+              <div className="count__one--secont-right-img2-sale">-30%</div>
+            </div>
           </div>
         </div>
       </div>

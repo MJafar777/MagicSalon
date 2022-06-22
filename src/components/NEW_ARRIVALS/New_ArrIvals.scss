@@ -95,6 +95,22 @@
     &-right {
       &-img2 {
         background-image: url("./images/elf.png");
+        height: 30rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        &-sale {
+          padding: 0.5rem 1rem;
+          width: 8.5rem;
+          top: -3rem;
+          position: absolute;
+          background-color: #e91c6a;
+          color: white;
+          font-size: 1.8rem;
+          text-align: center;
+          font-weight: 600;
+        }
       }
     }
   }
