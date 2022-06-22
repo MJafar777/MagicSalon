@@ -93,6 +93,7 @@
       }
     }
     &-right {
+      position: relative;
       &-img2 {
         background-image: url("./images/elf.png");
         height: 30rem;
@@ -114,4 +115,18 @@
       }
     }
   }
+}
+.priceDel {
+  color: gray;
+  top: 35rem;
+  position: absolute;
+}
+.contents {
+  margin-top: 3rem;
+}
+.img3 {
+  background-image: url("./images/whiteGirl.png") !important;
+}
+.img4 {
+  background-image: url("./images/cream.png") !important;
 }
