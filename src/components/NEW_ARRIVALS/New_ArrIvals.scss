@@ -1,138 +1,259 @@
-.ArrIvals {
-   &__header {
-      &--h2 {
-         margin-top: 4rem;
-         text-align: center;
-         font-size: 4rem;
-         display: flex;
-         align-items: center;
-         &-text {
-            width: 100%;
-            margin: 0 -5%;
-         }
-
-         &-border {
-            width: 100%;
-            border-top: 5px dashed #e91c6a;
-         }
-      }
-   }
+// responsive mixsin started
+@mixin desktop {
+  @media (max-width: "1660px") {
+    @content;
+  }
 }
+@mixin desktop2 {
+  @media (max-width: "1366px") {
+    @content;
+  }
+}
+
+@mixin land {
+  @media (max-width: "1100px") {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (max-width: "900px") {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: "650px") {
+    @content;
+  }
+}
+@mixin miniMobile {
+  @media (max-width: "500px") {
+    @content;
+  }
+}
+
+// copy example responsive started
+
+// @include desktop {
+
+// }
+// @include desktop2 {
+
+// }
+// @include land {
+
+// }
+// @include portrait {
+
+// }
+// @include mobile {
+
+// }
+// @include miniMobile {
+
+// }
+
+// copy example responsive finisheded
+
+// responsive mixsin finished
+
+// design started
+
+// header ArrIvals started
+.ArrIvals {
+  &__header {
+    &--h2 {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+
+      @include desktop {
+        font-size: 3.8rem;
+      }
+      @include desktop2 {
+        font-size: 3.6rem;
+      }
+      @include land {
+        font-size: 3.4rem;
+      }
+      @include portrait {
+        font-size: 3.2rem;
+      }
+      @include mobile {
+        font-size: 2.8rem;
+      }
+      @include miniMobile {
+        font-size: 2.4rem;
+      }
+
+      &-text {
+        width: 100%;
+        @include desktop {
+          width: 110%;
+        }
+        @include desktop2 {
+          width: 115%;
+        }
+        @include land {
+          width: 120%;
+        }
+        @include portrait {
+          width: 125%;
+        }
+        @include mobile {
+          width: 135%;
+        }
+        @include miniMobile {
+          width: 140%;
+        }
+        margin: 0 -5%;
+      }
+
+      &-border {
+        @include desktop {
+          width: 90%;
+        }
+        @include desktop2 {
+          width: 80%;
+        }
+        @include land {
+          width: 75%;
+        }
+        @include portrait {
+          width: 70%;
+        }
+        @include mobile {
+          width: 65%;
+        }
+        @include miniMobile {
+          width: 40%;
+        }
+        width: 100%;
+        border-top: 5px dashed #e91c6a;
+      }
+    }
+  }
+}
+// header ArrIvals finished
+
 
 .count__one {
-   width: 80%;
-   margin: 4rem auto;
-   display: grid;
-   grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
 
-   &--fearst {
-      background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8) 0%,
-            rgba(255, 255, 255, 0) 50%
-         ),
-         url(./images/korean.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 110%;
-      // height: 40rem;
+  &--fearst {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(255, 255, 255, 0) 50%
+      ),
+      url(./images/korean.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
 
-      &-h2 {
-         font-size: 4rem;
-         margin-top: 37%;
-         color: white;
-         width: 30%;
-         margin-left: 10%;
-      }
-      &-p {
-         margin-left: 10%;
-         color: white;
-         font-size: 2rem;
-         margin-top: 1rem;
-      }
-      &-btn {
-         padding: 1rem 2rem;
-         background-color: #e91c6a;
-         color: white;
-         font-size: 1.5rem;
-         border: none;
-         font-weight: 600;
-         border-radius: 0.5rem;
-         margin-left: 10%;
-         margin-top: 1rem;
-      }
-      &-btn:active {
-         transform: scale(1.05);
-         transition: all 0.3s;
-      }
-   }
-   &--secont {
-      margin: 0 4rem;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      align-items: center;
-      justify-content: space-between;
+    &-h2 {
+      font-size: 4rem;
+      margin-top: 37%;
+      color: white;
+      width: 30%;
+      margin-left: 10%;
+    }
+    &-p {
+      margin-left: 10%;
+      color: white;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    &-btn {
+      padding: 1rem 2rem;
+      background-color: #e91c6a;
+      color: white;
+      font-size: 1.5rem;
+      border: none;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      margin-left: 10%;
+      margin-top: 1rem;
+    }
+    &-btn:active {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
+  }
+  &--secont {
+    margin: 0 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
 
-      &-left {
-         &-content {
-            color: black;
-            &-1 {
-               font-size: 2rem;
-               font-weight: 600;
-            }
-            &-2 {
-               font-size: 1.8rem;
-               font-weight: 500;
-               margin-top: 1rem;
-            }
-         }
-         &-prices {
-            font-size: 1.8rem;
-            color: #e91c6a;
-            margin-left: 50%;
-            margin-top: 1rem;
-         }
+    &-left {
+      &-content {
+        color: black;
+        &-1 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        &-2 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-top: 1rem;
+        }
       }
-      &-right {
-         position: relative;
-         &-img2 {
-            background-image: url("./images/elf.png");
-            height: 30rem;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            &-sale {
-               padding: 0.5rem 1rem;
-               width: 8.5rem;
-               top: -3rem;
-               position: absolute;
-               background-color: #e91c6a;
-               color: white;
-               font-size: 1.8rem;
-               text-align: center;
-               font-weight: 600;
-            }
-         }
+      &-prices {
+        font-size: 1.8rem;
+        color: #e91c6a;
+        margin-left: 50%;
+        margin-top: 1rem;
       }
-   }
+    }
+    &-right {
+      position: relative;
+      &-img2 {
+        background-image: url("./images/elf.png");
+        height: 30rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        &-sale {
+          padding: 0.5rem 1rem;
+          width: 8.5rem;
+          top: -3rem;
+          position: absolute;
+          background-color: #e91c6a;
+          color: white;
+          font-size: 1.8rem;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 .priceDel {
-   color: gray;
-   top: 35rem;
-   position: absolute;
+  color: gray;
+  top: 35rem;
+  position: absolute;
 }
 .contents {
-   margin-top: 3rem;
+  margin-top: 3rem;
 }
 .img3 {
-   background-image: linear-gradient(
-         to top,
-         rgba(0, 0, 0, 0.8) 0%,
-         rgba(255, 255, 255, 0) 50%
-      ),
-      url("./images/whiteGirl.png") !important;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("./images/whiteGirl.png") !important;
 }
 .img4 {
-   background-image: url("./images/cream.png") !important;
+  background-image: url("./images/cream.png") !important;
 }
+
+// design finished

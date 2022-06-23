@@ -33,7 +33,7 @@ const Footer = () => {
           <p>Bath & Body</p>
           <p>Beauty Suppliments</p>
         </div>
-        <div className="row">
+        <div className="row sub">
           <h2>SUBSCRIBE</h2>
           <p className="subs">
             Subscribe to our newsletter, so that you can be the first to know

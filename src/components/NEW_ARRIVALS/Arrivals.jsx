@@ -1,18 +1,31 @@
+// import react started
 import React from "react";
+// import react finished
+
+// import css started
 import "./New_ArrIvals.scss";
+// import css finished
+
+// import images started
 import mesauda from "./images/mesauda.png";
 import creamGirl from "./images/creamGirl.png";
+// import images finished
 
 const Arrivals = () => {
   return (
     <div>
+      {/* section header started */}
+
       <h2 className="ArrIvals__header--h2">
         <div className="ArrIvals__header--h2-border"></div>
         <div className="ArrIvals__header--h2-text">NEW ARRIVALS</div>
         <div className="ArrIvals__header--h2-border"></div>
       </h2>
 
+      {/* section header finished */}
+
       {/* first reklama */}
+
       <div className="count__one">
         <div className="count__one--fearst">
           <h2 className="count__one--fearst-h2">The coat hotlist</h2>
@@ -92,6 +105,8 @@ const Arrivals = () => {
           <button className="count__one--fearst-btn">SHOP NOW</button>
         </div>
       </div>
+
+      {/* second reklama finished */}
     </div>
   );
 };
