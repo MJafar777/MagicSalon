@@ -6,11 +6,15 @@ import creamGirl from "./images/creamGirl.png";
 const Arrivals = () => {
   return (
     <div>
+      {/* section header started */}
+
       <h2 className="ArrIvals__header--h2">
         <div className="ArrIvals__header--h2-border"></div>
         <div className="ArrIvals__header--h2-text">NEW ARRIVALS</div>
         <div className="ArrIvals__header--h2-border"></div>
       </h2>
+
+      {/* section header finished */}
 
       {/* first reklama */}
       <div className="count__one">
