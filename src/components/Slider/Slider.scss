@@ -4,7 +4,7 @@
       rgba(25, 133, 242, 0.1),
       rgba(247, 81, 185, 0.1)
    );
-   padding: 3% 0;
+   padding: 3%;
    position: relative;
 
    &__img {
@@ -17,9 +17,10 @@
 }
 .slider {
    display: grid;
-   grid-template-columns: repeat(6, 1fr);
+   grid-template-columns: repeat(4, 1fr);
    align-items: center;
-   gap: 1%;
+   gap: 2%;
+   overflow-x: scroll;
 
    &__svg1 {
       justify-self: end;

@@ -13,7 +13,7 @@ const Slider2 = () => {
       <div className="slider-bg">
          <img src={bg_img} className="slider-bg__img" />
          <div className="slider">
-            <svg
+            {/* <svg
                xmlns="http://www.w3.org/2000/svg"
                width="15"
                height="36.965"
@@ -27,7 +27,7 @@ const Slider2 = () => {
                   transform="translate(17.015 11.396) rotate(90)"
                   fill="#e91c6a"
                />
-            </svg>
+            </svg> */}
 
             <div className="slider__item">
                <img src={url1} className="slider__item--img" />
@@ -63,7 +63,7 @@ const Slider2 = () => {
                <b className="slider__item--price">125 Aed</b>
             </div>
 
-            <svg
+            {/* <svg
                xmlns="http://www.w3.org/2000/svg"
                width="15"
                height="36.965"
@@ -76,7 +76,7 @@ const Slider2 = () => {
                   transform="translate(6.715 25.569) rotate(-90)"
                   fill="#e91c6a"
                />
-            </svg>
+            </svg> */}
          </div>
       </div>
    );
