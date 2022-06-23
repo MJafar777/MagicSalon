@@ -6,21 +6,40 @@
       ),
       url(./img/banner_img.jpg);
    background-position: center;
-   background-size: 110%;
+   background-size: 115%;
+   background-repeat: no-repeat;
    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+   @media (max-width: 600px) {
+      background-size: 150%;
+   }
 
    &__content {
       margin-left: 15%;
       padding: 1%;
+
+      @media (max-width: 600px) {
+         margin-left: 10%;
+      }
 
       &--bigText {
          color: #514f62;
 
          &-number {
             font-size: 10rem;
+
+            @media (max-width: 900px) {
+               font-size: 7rem;
+            }
+            @media (max-width: 600px) {
+               font-size: 4rem;
+            }
          }
          &-span {
             font-size: 6rem;
+
+            @media (max-width: 600px) {
+               font-size: 3rem;
+            }
          }
       }
 
@@ -33,6 +52,10 @@
          }
          &-b {
             font-size: 3rem;
+
+            @media (max-width: 600px) {
+               font-size: 2rem;
+            }
          }
       }
 
