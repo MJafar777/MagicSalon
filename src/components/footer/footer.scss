@@ -1,6 +1,38 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint==tab-land {
+    @media (max-width: 920px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-port {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+  @if $breakpoint==phone {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+  @if $breakpoint== smallPhone {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+  @if $breakpoint==big {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+html {
+  @include responsive(big) {
+    font-size: 75%;
+  }
+}
 .footer {
   width: 100%;
-  padding: 50px 0 20px 0;
+
   background-color: #514f62;
   color: white;
   display: flex;
@@ -9,10 +41,25 @@
 
   .menu {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 2.5fr;
+    grid-template-rows: auto;
     gap: 4rem;
+    @include responsive(big) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @include responsive(tab-port) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .sub {
+      @include responsive(big) {
+        grid-column: 1/6;
+      }
+      @include responsive(tab-port) {
+        grid-column: 2/5;
+      }
+    }
     .row {
       display: flex;
       flex-direction: column;
@@ -34,14 +81,13 @@
         color: white;
         font-size: 1.2rem;
         padding: 4px 2px;
-        max-width: 80%;
+        width: 80%;
         border-radius: 1.4rem;
         border: none;
         font-weight: bold;
         box-shadow: 0.2rem 0.4rem 0.5rem rgb(64, 63, 63);
       }
       .form {
-        width: 100%;
         background-color: white;
         border-radius: 1.5rem;
         display: flex;
@@ -50,6 +96,7 @@
           border: none;
           background-color: none;
           outline: none;
+
           padding-left: 30px;
           border-radius: 1.5rem 0 0 1.5rem;
         }
@@ -57,7 +104,7 @@
           background-color: #e91c6a;
           border: none;
           color: white;
-          padding: 8px 40px;
+          padding: 8px 50px;
           font-weight: 600;
           border-radius: 0 1.5rem 1.5rem 0;
         }
