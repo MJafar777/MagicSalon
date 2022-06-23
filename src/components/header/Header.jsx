@@ -42,7 +42,8 @@ const Header = () => {
             <div className="header__content">
                <div>
                   <h1>The</h1>
-                  <h1>The Classic - Collection Shop House</h1>
+                  <h1>Classic - Collection</h1>
+                  <h1>Shop House</h1>
                </div>
                <button>SHOP NOW</button>
                <div className="header__content--numb">
