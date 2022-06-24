@@ -1,259 +1,261 @@
 // responsive mixsin started
 @mixin desktop {
-  @media (max-width: "1660px") {
-    @content;
-  }
+   @media (max-width: "1660px") {
+      @content;
+   }
 }
 @mixin desktop2 {
-  @media (max-width: "1366px") {
-    @content;
-  }
+   @media (max-width: "1366px") {
+      @content;
+   }
 }
 
 @mixin land {
-  @media (max-width: "1100px") {
-    @content;
-  }
+   @media (max-width: "1100px") {
+      @content;
+   }
 }
 
 @mixin portrait {
-  @media (max-width: "900px") {
-    @content;
-  }
+   @media (max-width: "900px") {
+      @content;
+   }
 }
 @mixin mobile {
-  @media (max-width: "650px") {
-    @content;
-  }
+   @media (max-width: "650px") {
+      @content;
+   }
 }
 @mixin miniMobile {
-  @media (max-width: "500px") {
-    @content;
-  }
+   @media (max-width: "500px") {
+      @content;
+   }
 }
 
-// copy example responsive started
-
-// @include desktop {
-
-// }
-// @include desktop2 {
-
-// }
-// @include land {
-
-// }
-// @include portrait {
-
-// }
-// @include mobile {
-
-// }
-// @include miniMobile {
-
-// }
-
-// copy example responsive finisheded
-
-// responsive mixsin finished
-
-// design started
-
-// header ArrIvals started
 .ArrIvals {
-  &__header {
-    &--h2 {
-      margin-top: 4rem;
-      text-align: center;
-      font-size: 4rem;
-      display: flex;
-      align-items: center;
+   &__header {
+      &--h2 {
+         margin: 5% 0;
+         text-align: center;
+         font-size: 4rem;
+         display: flex;
+         align-items: center;
 
-      @include desktop {
-        font-size: 3.8rem;
-      }
-      @include desktop2 {
-        font-size: 3.6rem;
-      }
-      @include land {
-        font-size: 3.4rem;
-      }
-      @include portrait {
-        font-size: 3.2rem;
-      }
-      @include mobile {
-        font-size: 2.8rem;
-      }
-      @include miniMobile {
-        font-size: 2.4rem;
-      }
+         @include desktop {
+            font-size: 3.8rem;
+         }
+         @include desktop2 {
+            font-size: 3.6rem;
+         }
+         @include land {
+            font-size: 3.4rem;
+         }
+         @include portrait {
+            font-size: 3.2rem;
+         }
+         @include mobile {
+            font-size: 2.8rem;
+         }
+         @include miniMobile {
+            font-size: 2.4rem;
+         }
 
-      &-text {
-        width: 100%;
-        @include desktop {
-          width: 110%;
-        }
-        @include desktop2 {
-          width: 115%;
-        }
-        @include land {
-          width: 120%;
-        }
-        @include portrait {
-          width: 125%;
-        }
-        @include mobile {
-          width: 135%;
-        }
-        @include miniMobile {
-          width: 140%;
-        }
-        margin: 0 -5%;
-      }
+         &-text {
+            width: 100%;
+            @include desktop {
+               width: 110%;
+            }
+            @include desktop2 {
+               width: 115%;
+            }
+            @include land {
+               width: 120%;
+            }
+            @include portrait {
+               width: 125%;
+            }
+            @include mobile {
+               width: 135%;
+            }
+            @include miniMobile {
+               width: 140%;
+            }
+            margin: 0 -5%;
+         }
 
-      &-border {
-        @include desktop {
-          width: 90%;
-        }
-        @include desktop2 {
-          width: 80%;
-        }
-        @include land {
-          width: 75%;
-        }
-        @include portrait {
-          width: 70%;
-        }
-        @include mobile {
-          width: 65%;
-        }
-        @include miniMobile {
-          width: 40%;
-        }
-        width: 100%;
-        border-top: 5px dashed #e91c6a;
+         &-border {
+            @include desktop {
+               width: 90%;
+            }
+            @include desktop2 {
+               width: 80%;
+            }
+            @include land {
+               width: 75%;
+            }
+            @include portrait {
+               width: 70%;
+            }
+            @include mobile {
+               width: 65%;
+            }
+            @include miniMobile {
+               width: 40%;
+            }
+            width: 100%;
+            border-top: 5px dashed #e91c6a;
+         }
       }
-    }
-  }
+   }
 }
 // header ArrIvals finished
 
-
 .count__one {
-  width: 80%;
-  margin: 4rem auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
+   margin: 2% 10%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2%;
 
-  &--fearst {
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(255, 255, 255, 0) 50%
+   @media (max-width: 900px) {
+      justify-items: center;
+   }
+
+   @media (max-width: 1230px) {
+      margin: 2%;
+   }
+   @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      // grid-template-rows: 60%;
+   }
+
+   &--fearst {
+      background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(255, 255, 255, 0) 50%
+         ),
+         url(./images/korean.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 2%;
+      justify-content: end;
+      padding: 5%;
+      box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+
+      @media (max-width: 900px) {
+         //  width: 60%;
+         padding: 2%;
+         height: 60vh;
+         width: 80%;
+         background-size: 111%;
+      }
+      @media (max-width: 430px) {
+         background-size: 140%;
+      }
+
+      &-h2 {
+         font-size: 4rem;
+
+         @media (max-width: 1100px) {
+            font-size: 3.4rem;
+         }
+         @media (max-width: 900px) {
+            font-size: 2.8rem;
+         }
+
+         color: white;
+      }
+      &-p {
+         color: white;
+         font-size: 1.6rem;
+         font-weight: 600;
+      }
+      &-btn {
+         padding: 1.5% 4%;
+         background-color: #e91c6a;
+         color: white;
+         border: none;
+         font-weight: 600;
+         width: 25%;
+
+         @media (max-width: 1025px) {
+            width: 30%;
+         }
+         @media (max-width: 459px) {
+            width: 40%;
+         }
+      }
+      &-btn:active {
+         transform: scale(1.05);
+         transition: all 0.3s;
+      }
+   }
+   &--secont {
+      padding: 0 4%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 3%;
+      width: 100%;
+
+      @media (max-width: 600px) {
+         overflow-x: scroll;
+      }
+
+      &-left {
+         display: grid;
+         grid-template-rows: 70% 10% 5%;
+         position: relative;
+
+         &-content {
+            color: black;
+            margin-top: 20%;
+
+            &-sale {
+               position: absolute;
+               top: 0;
+               background-color: #e91c6a;
+               color: seashell;
+               padding: 1.5% 5%;
+               font-size: 1.4rem;
+            }
+
+            &-1 {
+               font-size: 1.4rem;
+               font-weight: 600;
+               padding-top: 3%;
+            }
+            &-2 {
+               font-size: 1.2rem;
+               font-weight: 500;
+               margin-top: 1%;
+            }
+         }
+         &-prices {
+            font-size: 1.4rem;
+            color: #e91c6a;
+            font-weight: 600;
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+
+            & p {
+               text-decoration: line-through;
+               color: grey;
+               opacity: 0.3;
+            }
+         }
+      }
+   }
+}
+.whiteGirl {
+   background-image: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 0.8) 0%,
+         rgba(255, 255, 255, 0) 50%
       ),
-      url(./images/korean.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-
-    &-h2 {
-      font-size: 4rem;
-      margin-top: 37%;
-      color: white;
-      width: 30%;
-      margin-left: 10%;
-    }
-    &-p {
-      margin-left: 10%;
-      color: white;
-      font-size: 2rem;
-      margin-top: 1rem;
-    }
-    &-btn {
-      padding: 1rem 2rem;
-      background-color: #e91c6a;
-      color: white;
-      font-size: 1.5rem;
-      border: none;
-      font-weight: 600;
-      border-radius: 0.5rem;
-      margin-left: 10%;
-      margin-top: 1rem;
-    }
-    &-btn:active {
-      transform: scale(1.05);
-      transition: all 0.3s;
-    }
-  }
-  &--secont {
-    margin: 0 4rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-content: space-between;
-
-    &-left {
-      &-content {
-        color: black;
-        &-1 {
-          font-size: 2rem;
-          font-weight: 600;
-        }
-        &-2 {
-          font-size: 1.8rem;
-          font-weight: 500;
-          margin-top: 1rem;
-        }
-      }
-      &-prices {
-        font-size: 1.8rem;
-        color: #e91c6a;
-        margin-left: 50%;
-        margin-top: 1rem;
-      }
-    }
-    &-right {
-      position: relative;
-      &-img2 {
-        background-image: url("./images/elf.png");
-        height: 30rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        &-sale {
-          padding: 0.5rem 1rem;
-          width: 8.5rem;
-          top: -3rem;
-          position: absolute;
-          background-color: #e91c6a;
-          color: white;
-          font-size: 1.8rem;
-          text-align: center;
-          font-weight: 600;
-        }
-      }
-    }
-  }
+      url("./images/whiteGirl.png");
 }
-.priceDel {
-  color: gray;
-  top: 35rem;
-  position: absolute;
-}
-.contents {
-  margin-top: 3rem;
-}
-.img3 {
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(255, 255, 255, 0) 50%
-    ),
-    url("./images/whiteGirl.png") !important;
-}
-.img4 {
-  background-image: url("./images/cream.png") !important;
-}
-
-// design finished
