@@ -95,12 +95,16 @@ html {
 
          & h2 {
             color: #514f62;
-            font-size: 55px;
-            @include responsive(tab-land) {
-               font-size: 4.4rem;
+            font-size: 4rem;
+            padding: 2%;
+            @media (max-width: 1200px) {
+               font-size: 2.8rem;
             }
-            @media (max-width: 600px) {
-               font-size: 3.6rem;
+            @media (max-width: 900px) {
+               font-size: 2.4rem;
+            }
+            @media (max-width: 700px) {
+               font-size: 2rem;
             }
          }
 
@@ -179,8 +183,7 @@ html {
    }
 
    &--btn {
-      padding: 0 10%;
-      height: 33px;
+      padding: 2% 7%;
       background-color: #e91c6a;
       border: 3px solid #e91c6a;
       color: white;
@@ -188,8 +191,14 @@ html {
       font-weight: bold;
       margin: 5%;
 
-      @media (max-width: 850px) {
+      @media (max-width: 800px) {
+         font-size: 1.2rem;
+      }
+      @media (max-width: 600px) {
          font-size: 1.1rem;
+      }
+      @media (max-width: 400px) {
+         font-size: 1rem;
       }
    }
 }

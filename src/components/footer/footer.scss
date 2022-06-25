@@ -74,15 +74,29 @@ html {
          width: 100%;
 
          h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             padding: 4px 0;
             margin: 1% 0;
             text-decoration: underline;
             text-underline-offset: 10px;
+
+            @media (max-width: 900px) {
+               font-size: 1.6rem;
+            }
+            @media (max-width: 600px) {
+               font-size: 1.4rem;
+            }
+            @media (max-width: 400px) {
+               font-size: 1.2rem;
+            }
          }
          p {
             font-size: 1.4rem;
             line-height: 1.4;
+
+            @media (max-width: 600px) {
+               font-size: 1.2rem;
+            }
          }
          .menu_btn {
             background-color: #e91c6a;
@@ -94,6 +108,10 @@ html {
             border: none;
             font-weight: bold;
             box-shadow: 0.2rem 0.4rem 0.5rem rgb(64, 63, 63);
+
+            @media (max-width: 600px) {
+               width: 60%;
+            }
          }
          .form {
             background-color: white;

@@ -10,6 +10,7 @@ const TopSellers = () => {
                <div className="TopSeler__header--h2-text">TOP SELLERS</div>
                <div className="TopSeler__header--h2-border"></div>
             </h2>
+
             <div className="imgBackground">
                <div className="imgBackground--ImgTop1">
                   <div className="imgBackground--ImgTop1-text">
@@ -21,10 +22,10 @@ const TopSellers = () => {
                   </button>
                </div>
 
-               <div className="imgBackground--ImgTop2">
-                  <div className="imgBackground--ImgTop2-text">
+               <div className="imgBackground--ImgTop1 imgBackground--ImgTop2">
+                  <div className="imgBackground--ImgTop1-text">
                      <h2>Pore Patrol</h2>
-                     <p>Meet your FW18 closet cornerstone</p>
+                     <p>Radiance-boosting Cleanser With Lychee</p>
                   </div>
                   <button className="imgBackground--ImgTop1-btnShop">
                      SHOP NOW
@@ -32,9 +33,7 @@ const TopSellers = () => {
                </div>
             </div>
          </div>
-         <a className="TopSeler--link" href="1">
-            SEE ALL
-         </a>
+         <div className="TopSeler--link">SEE ALL</div>
       </div>
    );
 };

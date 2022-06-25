@@ -13,7 +13,7 @@ const Header = () => {
             <a
                onClick={() => setQizil(!qizil)}
                className={`Menu__link Menu__link2 ${qizil ? "qizil" : ""} `}
-               href="//"
+               href="/"
             >
                ALL BRANDS{" "}
                <img className="Menu__link2--two" src={acardion} alt="#" />

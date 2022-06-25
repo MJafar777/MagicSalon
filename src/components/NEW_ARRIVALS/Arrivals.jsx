@@ -133,6 +133,7 @@ const Arrivals = () => {
             </div>
          </div>
 
+         <div className="see-all">SEE ALL</div>
          {/* second reklama finished */}
       </div>
    );

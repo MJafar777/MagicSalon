@@ -101,6 +101,11 @@
             color: #e91c6a;
             background-color: white;
          }
+
+         &:active {
+            transform: scale(1.05);
+            transition: all 0.3s;
+         }
       }
 
       &--numb {
