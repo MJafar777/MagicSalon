@@ -90,7 +90,7 @@ const Arrivals = () => {
                      className="count__one--secont-left-img1"
                      alt="#"
                   />
-                  <div className="count__one--secont-left-content">
+                  <div className="count__one--secont-left-content count__one--secont-left-content2">
                      <p className="count__one--secont-left-content-1">
                         JW Anderson
                      </p>
@@ -107,8 +107,8 @@ const Arrivals = () => {
                      className="count__one--secont-left-img1"
                      alt="#"
                   />
-                  <div className="count__one--secont-left-content">
-                     <div className="count__one--secont-left-content-sale">
+                  <div className="count__one--secont-left-content count__one--secont-left-content2">
+                     <div className="count__one--secont-left-content-sale ">
                         - 30%
                      </div>
                      <p className="count__one--secont-left-content-1">
