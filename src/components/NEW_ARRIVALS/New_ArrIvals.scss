@@ -119,6 +119,7 @@
 
       &-h2 {
          font-size: 4rem;
+         margin: 0;
 
          @media (max-width: 1100px) {
             font-size: 3.4rem;
@@ -136,6 +137,7 @@
          color: white;
          font-size: 1.6rem;
          font-weight: 600;
+         margin: 0;
          @media (max-width: 900px) {
             font-size: 1.4rem;
          }
@@ -212,8 +214,10 @@
                font-size: 1.4rem;
                font-weight: 600;
                padding-top: 3%;
+               margin: 0;
             }
             &-2 {
+               margin: 0;
                font-size: 1.2rem;
                font-weight: 500;
                margin-top: 1%;

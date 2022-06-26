@@ -94,6 +94,17 @@ html {
             font-size: 1.4rem;
             line-height: 1.4;
 
+            &:not(.subs) {
+               cursor: pointer;
+
+               &:hover {
+                  color: #e91c6a;
+               }
+               &:active {
+                  transform: scale(1.04);
+               }
+            }
+
             @media (max-width: 600px) {
                font-size: 1.2rem;
             }
@@ -108,6 +119,11 @@ html {
             border: none;
             font-weight: bold;
             box-shadow: 0.2rem 0.4rem 0.5rem rgb(64, 63, 63);
+            cursor: pointer;
+
+            &:active {
+               transform: scale(1.04);
+            }
 
             @media (max-width: 600px) {
                width: 60%;
@@ -133,6 +149,11 @@ html {
                padding: 2% 10%;
                font-weight: 600;
                border-radius: 0 1.5rem 1.5rem 0;
+               cursor: pointer;
+
+               &:active {
+                  transform: scale(1.04);
+               }
 
                @media (max-width: 1200px) {
                   padding: 1% 8%;

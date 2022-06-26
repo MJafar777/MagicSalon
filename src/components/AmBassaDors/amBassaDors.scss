@@ -190,6 +190,11 @@ html {
       font-size: 1.4rem;
       font-weight: bold;
       margin: 5%;
+      cursor: pointer;
+
+      &:active {
+         transform: scale(1.04);
+      }
 
       @media (max-width: 800px) {
          font-size: 1.2rem;

@@ -38,6 +38,11 @@
          display: flex;
          flex-direction: column;
          gap: 5px;
+
+         & h3,
+         p {
+            margin: 0;
+         }
       }
 
       &--price {
