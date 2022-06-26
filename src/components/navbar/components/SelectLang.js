@@ -10,7 +10,7 @@ export default function SelectLang() {
          className="ui floating dropdown labeled search icon"
          onClick={() => setActive((prev) => !prev)}
       >
-         <i class={`${selected} flag`}></i>
+         <i className={`${selected} flag`}></i>
          <div className="menu" style={{ display: `${active ? "block" : ""}` }}>
             {options.map((val, key) => {
                return (
@@ -21,7 +21,7 @@ export default function SelectLang() {
                         setSelected(val);
                      }}
                   >
-                     <i class={`${val} flag`}></i>
+                     <i className={`${val} flag`}></i>
                   </div>
                );
             })}
