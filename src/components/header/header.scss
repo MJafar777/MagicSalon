@@ -186,6 +186,11 @@
    }
 }
 
+.displayNone {
+   display: none;
+   transition: 0.2s;
+}
+
 //
 .header {
    background-image: linear-gradient(
@@ -202,6 +207,11 @@
    color: seashell;
    padding: 7% 0;
    margin-bottom: 3%;
+
+   @media (min-width: 1600px) {
+      background-size: cover;
+      background-position-x: -3rem;
+   }
 
    @include max1300 {
       background-size: 110%;

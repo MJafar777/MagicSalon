@@ -12,7 +12,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 const Header = () => {
-   const [value, setValue] = React.useState(0);
+   const [value, setValue] = useState(0);
+   const [activeSubnav, setActiveSubnav] = useState(false);
 
    const handleChange = (event, newValue) => {
       setValue(newValue);
@@ -20,7 +21,12 @@ const Header = () => {
    return (
       <div>
          <div className="Menu">
-            <a className={`Menu__link Menu__link2  `}>
+            <a
+               className={`Menu__link Menu__link2  `}
+               onClick={() => {
+                  setActiveSubnav((prev) => !prev);
+               }}
+            >
                <b>ALL BRANDS </b>
                <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +70,7 @@ const Header = () => {
             <button className="Menu__btn">SELL WITH US</button>
          </div>
 
-         <div className="subnav">
+         <div className={`subnav ${!activeSubnav && "displayNone"}`}>
             <div className="subnav__left">
                <div className="subnav__left--child">
                   <h2>Women</h2>

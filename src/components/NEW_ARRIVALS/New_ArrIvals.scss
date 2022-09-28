@@ -106,6 +106,10 @@
       padding: 5%;
       box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
 
+      @media (min-width: 1440px) {
+         background-size: 111%;
+      }
+
       @media (max-width: 1100px) {
          background-size: 140%;
       }
